@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+  background: #669966;
+  font-family: Verdana;
+  font-size: 13px;
+	width: 800px;
+}
+div#link {
+	position: relative;
+	height: auto;
+	width: auto;
+	left: 25px;
+	top: 45px;
+}
+#link a { 
+	text-decoration:none; 
+	font-family: Monospace, Verdana, serif;
+	color: white;
+	font-size: 44px;
+}
+#link a:visited { text-decoration:none; }
+#link a:hover { text-decoration:none; }
+#link a:active { text-decoration:none; }
+
+div#logo {
+	    background-image:  url(/assets/top_title.JPG);
+	    background-repeat: no-repeat;
+	    height: 210px;
+	    width: 800px;
+}
+
+#side_body_content {
+	float: left;
+  width: 20%;
+	height: 500px;
+  background: white;
+  color: #333;
+  padding: 10px;
+}
+
+#body_content {
+	float: left;
+  width: 75%;
+	height: 500px;
+  background: white;
+  color: #333;
+  padding: 10px;
+}
+#menu li { 
+	display: inline;
+	padding: 10px;
+}
+#menu ul { 
+	margin: 5px;
+	padding: 1px; 
+}
+#menu {
+	vertical-align: left;
+}
+#menu a {
+	color: white;
+	text-decoration: none;
+}
+#menu a:hover {
+    background: #339999;
+}
+.menu {
+	padding: 0px;
+}
