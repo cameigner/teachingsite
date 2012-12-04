@@ -1,0 +1,19 @@
+<section id='body_content'>
+  <%=raw @page.content_for(:body) %>
+</section>
+<% if !(@page.content_for(:side_body) == '') %>
+	<section id='side_body_content'>
+	<%=raw @page.content_for(:side_body) %>
+	</section>
+<% else %>
+	<section id='side_body_content'>
+		<h1>Recent Blog Posts</h1>
+		<ul>
+			<% @blog_posts.each do |blog_post| %> 
+			<li class='clearfix'> 
+		    	<%= link_to blog_post.title, blog_post_url(blog_post) %>
+			</li>
+		</ul>
+	<% end %>
+</section>
+<% end %>
