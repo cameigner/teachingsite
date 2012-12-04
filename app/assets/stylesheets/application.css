@@ -11,7 +11,10 @@
  *= require_self
  *= require_tree .
  */
-
+#blog_posts h1 {
+	font-size: 18px;
+	padding: 1px;
+}
 body {
   background: #669966;
   font-family: Verdana;
@@ -42,22 +45,28 @@ div#logo {
 	    width: 800px;
 }
 
-#side_body_content {
-	float: left;
-  width: 20%;
-	height: 500px;
-  background: white;
-  color: #333;
-  padding: 10px;
-}
+
 
 #body_content {
 	float: left;
   width: 75%;
-	height: 500px;
+	min-height: 500px;
   background: white;
   color: #333;
   padding: 10px;
+	-moz-border-radius: 1em 0em 1em 4em;
+	border-radius: 1em 0em 1em 1em;
+}
+#side_body_content {
+	float: left;
+  width: 20%;
+	min-height: 400px;
+  background: white;
+  color: #333;
+  padding: 10px;
+	-moz-border-radius-bottomright: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
 }
 #menu li { 
 	display: inline;
@@ -75,7 +84,7 @@ div#logo {
 	text-decoration: none;
 }
 #menu a:hover {
-    background: #339999;
+    background: #006633;
 }
 .menu {
 	padding: 0px;
