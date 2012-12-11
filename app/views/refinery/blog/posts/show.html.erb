@@ -8,7 +8,7 @@
   <% end %>
 <% end %>
 
-<%= render :partial => '/refinery/blog/shared/body_content_right' %>
+<%#= render :partial => '/refinery/blog/shared/body_content_right' %>
 
 <%= render :partial => "/refinery/content_page", :locals => { :remove_automatic_sections => true }  %>
 
@@ -19,3 +19,13 @@
   <script src="http://w.sharethis.com/button/buttons.js"></script>
   <script>stLight.options({publisher:'<%= Blog::Post::ShareThis.key %>'});</script>
 <% end if Refinery::Blog::Post::ShareThis.enabled? %>
+<div id="side_body_content">
+	<h1>Recent Blog Posts</h1>
+	<ul>
+		<% @blog_posts.each do |blog_post| %> 
+		<li class='clearfix'> 
+			<a href="/blog/posts/<%= blog_post.custom_url %>"><%= blog_post.title %></a>
+		</li>
+<% end %>
+</ui>
+	</div>

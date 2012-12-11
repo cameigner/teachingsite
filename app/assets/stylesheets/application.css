@@ -11,10 +11,7 @@
  *= require_self
  *= require_tree .
  */
-#blog_posts h1 {
-	font-size: 18px;
-	padding: 1px;
-}
+
 body {
   background: #669966;
   font-family: Verdana;
@@ -38,14 +35,29 @@ div#link {
 #link a:hover { text-decoration:none; }
 #link a:active { text-decoration:none; }
 
+a:link { 
+	text-decoration:none; 
+	color: black;
+}
+a:visited { 
+	text-decoration:none; 
+	color: black;
+}
+a:hover { 
+	text-decoration:underline; 
+	color: #006633;	
+}
+a:active { 
+	text-decoration:none; 
+	color: #006633;
+}
+
 div#logo {
 	    background-image:  url(/assets/top_title.JPG);
 	    background-repeat: no-repeat;
 	    height: 210px;
 	    width: 800px;
 }
-
-
 
 #body_content {
 	float: left;
@@ -56,6 +68,14 @@ div#logo {
   padding: 10px;
 	-moz-border-radius: 1em 0em 1em 4em;
 	border-radius: 1em 0em 1em 1em;
+}
+div#side_body_content h1 {
+	font-size: 1.17em;
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+h1 {
+	font-size: 1.17em;
 }
 #side_body_content {
 	float: left;
